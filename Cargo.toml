@@ -1,0 +1,21 @@
+[package]
+name = "mini-redis"
+version = "0.1.0"
+edition = "2021"
+authors = ["Halil Aydın"]
+description = "A minimal Redis-like key-value store implementation in Rust"
+license = "MIT"
+repository = "https://github.com/awaiden/mini-redis"
+keywords = ["redis", "key-value", "database", "async"]
+categories = ["database", "network-programming"]
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
+
+[dependencies]
+tokio = { version = "1.52.3", features = ["full"] }
