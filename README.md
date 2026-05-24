@@ -2,6 +2,10 @@
 
 A minimal Redis-like in-memory key-value store implementation in Rust, built with async/await using Tokio.
 
+### IMPORTANT
+
+This project is a learning exercise and is not intended for production use.
+
 ## Features
 
 - **Asynchronous TCP Server** - Built with Tokio for high-performance async I/O
@@ -21,7 +25,7 @@ Make sure you have Rust installed. Then clone and build:
 
 ```bash
 git clone <repository-url>
-cd mini-redis
+cd redis_rs
 cargo build --release
 ```
 
